@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.topo {
+    width: 100%;
+    background: linear-gradient(to right, red, black);
+}
+
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.container-link-logotipo {
+    flex: 1 0 60%;
+}
+
+.container-link-logotipo img {
+    width: 80px;
+    height: 80px;
+}
+
+.container-links {
+    flex: 1 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-topo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+.banner-conteudo {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    background-image: url(../assets/img/torcida-flamengo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+
+}
+
+.banner-conteudo h2 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+.container-banner {
+    font-size: 34px;
+    color: gold;
+
+}
+
+.conteudo-principal {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/maracana-antigo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 10px 5px 5px black;
+    color: black;
+    background-color: #fff;
+}
+
+.container-historia h2 {
+    padding: 20px;
+}
+
+.container-historia p {
+    line-height: 30px;
+}
+
+.conteudo-titulos {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/banner-titulos.jpg);
+    filter: grayscale(100%);
+    flex-direction: column;
+}
+
+
+.card-titulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    height: 600px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card:hover img {
+    filter: grayscale(0);
+    scale: 1.05;
+}
+
+.rodape {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to right, red, black);
+}
+
+.container-rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-rodape a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores */
+    body {
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    .container-topo {
+        flex-direction: column; /* Organize os elementos em coluna */
+    }
+
+    .container-links {
+        flex-direction: column;
+    }
+
+    .card-titulos {
+        flex-direction: column; /* Organize as cards em coluna */
+    }
+
+    /* Outros ajustes para elementos específicos */
+    .banner-conteudo h2 {
+        font-size: 24px;
+    }
+}
